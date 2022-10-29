@@ -199,3 +199,10 @@ section .colour:nth-child(3) {
     font-weight: 600;
     text-decoration: none;
 }
+
+#homepage {
+    font-family:"Poppins", sans-serif;
+    align-items:flex-start;
+    justify-content:space-around;
+    min-width: 100%;
+}
