@@ -9,8 +9,7 @@
         integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Saathi</title>
-    <link rel="stylesheet" href="onlyerrors.css
-    " />
+    <link rel="stylesheet" href="{{'url_for('static',filename='onlyerrors.css')}}" />
 </head>
 
 <body>
@@ -21,7 +20,7 @@
                 <div class="logo">
 
                     <a href="#">
-                        <img src="DARUMA.png" alt="logo" />
+                        <img src="{{url_for('static',filename='images/DARUMA.png')}}" alt="logo" />
                     </a>
                 </div>
 
@@ -75,7 +74,7 @@
         </div>
         <!-- right side code   -->
         <div class="hero-right-side">
-            <img src="pigie.png" alt="heropageImg" />
+            <img src="{{url_for('static',filename='images/pigie.png')}}" alt="heropageImg" />
         </div>
     </section>
 
@@ -88,7 +87,7 @@
         </p>
         <div class="section-third-task">
             <div class="task-1">
-                <img src="datacharts.png" alt="icon1" />
+                <img src="{{url_for('static',filename='images/datacharts.png')}}" alt="icon1" />
                 <h3>Data Chart</h3>
                 <p>
                     A data chart is a type of diagram or graph, that organizes and represents a set of numerical or
@@ -99,21 +98,21 @@
             </div>
 
             <div class="task-2">
-                <img src="financialgoals.png" alt="icon1" />
+                <img src="{{url_for('static',filename='images/financialgoals.png')}}" alt="icon1" />
                 <h3>financial Goal</h3>
                 <p>
                     A financial goal is a target to aim for when managing your money. It can involve saving, spending,
                     earning or even investing. Creating a list of financial goals is vital to creating a budget. When
-                    you have a clear picture of what you're aiming for, working towards your target is easy.
+                    you have a clear picture of what you're aiming for, working towards your target is easy.
                 </p>
             </div>
 
             <div class="task-3">
-                <img src="efficientananalyse.png" alt="icon1" />
+                <img src="{{url_for('static',filename='images/efficientananalyse.png')}}" alt="icon1" />
                 <h3>Efficient Analyse</h3>
                 <p>
                     We provide a detailed examination of anything complex in order to understand its nature or to
-                    determine its essential features : a thorough study doing a careful analysis of the problem.
+                    determine its essential features : a thorough study doing a careful analysis of the problem.
 
                 </p>
             </div>
@@ -125,7 +124,7 @@
         <!-- left side of section 2  -->
         <div class="left-side">
             <figure>
-                <img src="girl.png" alt="section2" />
+                <img src="{{url_for('static',filename='girl.png')}}" alt="section2" />
             </figure>
         </div>
 
@@ -149,7 +148,7 @@
 
     <footer>
         <div class="logo-div">
-            <img src="DARUMA.png" alt="logo" />
+            <img src="{{url_for('static,filename='DARUMA.png')}}" alt="logo" />
             <p>@2022 Daruma</p>
         </div>
 
