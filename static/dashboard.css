@@ -165,3 +165,6 @@
       gap: 1em;
     }
   }
+#currencytype {
+  display:inline-block;
+}
