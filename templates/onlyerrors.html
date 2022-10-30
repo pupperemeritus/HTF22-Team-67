@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Daruma</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='onlyerrors.css')}}">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- left side menu  -->
+            <div class="left-side-menu">
+                <div class="logo">
+
+                    <a href="#">
+                        <img src="{{url_for('static',filename='images/DARUMA.png')}}" alt="logo" />
+                    </a>
+                </div>
+
+                <div class="sub-menu">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="aboutus">
+                        <li>About</li>
+                    </a>
+                    <a href="#section-third">
+                        <li>Features</li>
+                    </a>
+                    <a href="dashboard">
+                        <li>Dashboard</li>
+                    </a>
+                </div>
+            </div>
+
+            <!-- right side menu  -->
+            <div class="right-side-menu">
+                <div class="sub-menu">
+                    <a href="login">
+                        <li>Log In</li>
+                    </a>
+                    <a href="signup">
+                        <button>Register</button>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="main-hero-section">
+        <!-- left side code   -->
+        <div class="hero-left-side">
+            <h1>Use an Expense Management App.</h1>
+            <p>An expense tracker is a software or application that helps to
+                keep an accurate record of your money inflow and outflow.
+                Many people in India live on a fixed income, and they find that
+                towards the end of the month they don't have sufficient money
+                to meet their needs.
+            </p>
+            <!-- <div class="button-group">
+                <a href="#">
+                    <button>Get Help</button>
+                </a>
+                <a href="#">
+                    <button>Give Help</button>
+                </a>
+            </div> -->
+        </div>
+        <!-- right side code   -->
+        <div class="hero-right-side">
+            <img src="{{url_for('static',filename='images/pigie.png')}}" alt="heropageImg" />
+        </div>
+    </section>
+
+    <!-- -----------------------------3rd section
+        ---------------------------------------------------------------------- -->
+    <section class="section-third" id="section-third">
+        <h2>Significant features.</h2>
+        <p>
+            Aspects of our application that are worthy of your attention.
+        </p>
+        <div class="section-third-task">
+            <div class="task-1">
+                <img src="{{url_for('static',filename='images/datacharts.png')}}" alt="icon1" />
+                <h3>Data Chart</h3>
+                <p>
+                    A data chart is a type of diagram or graph, that organizes and represents a set of numerical or
+                    qualitative data. Maps that are adorned with extra information (map surround) for a specific purpose
+                    are often known as charts, such as a nautical chart or aeronautical chart, typically spread over
+                    several map sheets.
+                </p>
+            </div>
+
+            <div class="task-2">
+                <img src="{{url_for('static',filename='images/financialgoals.png')}}" alt="icon1" />
+                <h3>financial Goal</h3>
+                <p>
+                    A financial goal is a target to aim for when managing your money. It can involve saving, spending,
+                    earning or even investing. Creating a list of financial goals is vital to creating a budget. When
+                    you have a clear picture of what you're aiming for, working towards your target is easy.
+                </p>
+            </div>
+
+            <div class="task-3">
+                <img src="{{url_for('static',filename='images/efficientananalyse.png')}}" alt="icon1" />
+                <h3>Efficient Analyse</h3>
+                <p>
+                    We provide a detailed examination of anything complex in order to understand its nature or to
+                    determine its essential features : a thorough study doing a careful analysis of the problem.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------- th section
+        ---------------------------------------------------------------------- -->
+    <section class="common-section" id="section-two">
+        <!-- left side of section 2  -->
+        <div class="left-side">
+            <figure>
+                <img src="{{url_for('static',filename='images/girl.png')}}" alt="section2" />
+            </figure>
+        </div>
+
+        <!-- right side of section 2  -->
+        <div class="right-side">
+            <h2>You are unaware what is happening with your money.</h2>
+            <p>
+                If you are clueless about how much is your inflow and how much you are
+                spending. An expense tracker helps you figure out what is happening to your
+                money, and whether you can afford something you want. .
+            </p>
+            <div class="button-group">
+                <a href="dashboard">
+                    <button class="common-button"> Track your Expenses </button>
+                </a>
+                <button class="common-button-normal"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------- 6th section
+        ---------------------------------------------------------------------- -->
+
+    <footer>
+        <div class="logo-div">
+            <img src="{{url_for('static',filename='images/DARUMA.png')}}" alt="logo" />
+            <p>@2022 Daruma</p>
+        </div>
+
+        <div class="footer-menu">
+            <!--<div class="footer-div-2">
+                <h4>Products</h4>
+                <a href="#">
+                    <li>pricing</li>
+                </a>
+                <a href="#">
+                    <li>pricing</li>
+                </a>
+            </div>-->
+
+            <div class="footer-div-3">
+                <h4>Abouts</h4>
+                <a href="#">
+                    <li>pricing</li>
+                </a>
+                <a href="#">
+                    <li>pricing</li>
+                </a>
+            </div>
+
+            <!-- <div class="footer-div-4">
+                <h4>Blogs</h4>
+                <a href="#">
+                    <li>pricing</li>
+                </a>
+                <a href="#">
+                    <li>pricing</li>
+                </a>
+            </div>-->
+
+            <div class="footer-div-5">
+                <h4>Get In Touch</h4>
+                <a href="#">
+                    <li>Questions Or Feedback?</li>
+                </a>
+                <a href="#">
+                    <li>We’ll love to help you</li>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
