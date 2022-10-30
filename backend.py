@@ -9,7 +9,7 @@ db = SQLAlchemy(app)
 
 class users(db.Model):
     _id = db.Column("id",db.Integer,primary_key=True)
-    
+
 
 @app.route("/")
 def home():
