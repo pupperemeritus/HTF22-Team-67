@@ -1,45 +1,42 @@
 from flask import Flask,redirect,url_for,render_template,request,session,flash
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
+from datetime import timedelta
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite://user.sqlite3"
 app = Flask(__name__)
-app.permanent_session_lifetime(minutes=30)
+#app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite://user.sqlite3"
+#app.permanent_session_lifetime(minutes=30)
 
-db = SQLAlchemy(app)
+#db = SQLAlchemy(app)
 
-class users(db.Model):
-    _id = db.Column("id",db.Integer,primary_key=True)
+#class users(db.Model):
+#    _id = db.Column("id",db.Integer,primary_key=True)
 
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("onlyerrors.html")
 
-@app.route("/login",methods=["GET", "POST"])
+@app.route("/login")
 def login():
-    if session.method == "POST":
-        session.permanent = True
-        user = request.form["Username"]
-        session["user"] = user
-        return redirect(url_for("user"))
-    else:
-        if "user" in session:
-            return redirect(url_for("user",usr=user))
+#        return render_template("dashboard.html")
         return render_template("login.html")
 
-@app.route("/signup",methods=["GET", "POST"])
+@app.route("/signup")
 def signup():
-    if session.method == "POST":
-        if request.form["Password"] == 
-        session.permanent = True
-        user = request.form["Username"]
-        session["user"] = user
-        return redirect(url_for("user"))
+    return render_template("signup.html")
+
+@app.route("/aboutus")
+def about():
+    return render_template("aboutus.html")
+
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html")
 
 @app.route("/logout")
 def logout():
     session.pop("user",None)
-    return redirect(url_for("login"))
+    return render_template("onlyerrors.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

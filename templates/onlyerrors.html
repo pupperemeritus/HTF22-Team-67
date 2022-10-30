@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
         integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Saathi</title>
-    <link rel="stylesheet" href="{{'url_for('static',filename='onlyerrors.css')}}" />
+    <title>Daruma</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='onlyerrors.css')}}">
+
 </head>
 
 <body>
@@ -28,14 +29,14 @@
                     <a href="#">
                         <li>Home</li>
                     </a>
-                    <a href="#section-two">
+                    <a href="aboutus">
                         <li>About</li>
                     </a>
                     <a href="#section-third">
                         <li>Features</li>
                     </a>
-                    <a href="#section-five">
-                        <li>Tips</li>
+                    <a href="dashboard">
+                        <li>Dashboard</li>
                     </a>
                 </div>
             </div>
@@ -43,10 +44,13 @@
             <!-- right side menu  -->
             <div class="right-side-menu">
                 <div class="sub-menu">
-                    <a href="#">
+                    <a href="login">
                         <li>Log In</li>
                     </a>
-                    <button>Register</button>
+                    <a href="signup">
+                        <button>Register</button>
+                    </a>
+
                 </div>
             </div>
         </nav>
@@ -124,7 +128,7 @@
         <!-- left side of section 2  -->
         <div class="left-side">
             <figure>
-                <img src="{{url_for('static',filename='girl.png')}}" alt="section2" />
+                <img src="{{url_for('static',filename='images/girl.png')}}" alt="section2" />
             </figure>
         </div>
 
@@ -148,7 +152,7 @@
 
     <footer>
         <div class="logo-div">
-            <img src="{{url_for('static,filename='DARUMA.png')}}" alt="logo" />
+            <img src="{{url_for('static',filename='images/DARUMA.png')}}" alt="logo" />
             <p>@2022 Daruma</p>
         </div>
 
