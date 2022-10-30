@@ -1,13 +1,13 @@
 # HTF22-Team-67(Expense Tracker)
 DARUMA is an application that tracks your expenses and provides insights into your spending
 ### Main features 
-1. easy to use and ligth weight 
-1. minimalistic UI
+1. Easy to use and light weight 
+1. Minimalistic UI
 1. Tracks daily expenses 
 
 ### FUTURE SCOPE 
 - [ ] SQL storage
-- [ ] user Authentication 
+- [ ] User Authentication 
 - [ ] Data Visualisation 
 - [ ] Integration with UPI and Netbanking
 - [ ] Real Time monitoring Data  
